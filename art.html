@@ -6,13 +6,13 @@
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
     <a-assets>
-    <img id="scream" src="https://res.cloudinary.com/dougsillars/image/fetch/https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg">
+    <img id="scream" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg">
   </a-assets>
 
   
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
-    <a-box position='0 1 0' scale="2 2 2" src = '#scream' material='opacity: 0.5;'></a-box>
+    <a-box position='0 1 0' scale="2 2 2" src =""#scream" material='opacity: 0.5;'></a-box>
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
