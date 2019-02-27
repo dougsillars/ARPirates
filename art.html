@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>art</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>  
+ <!-- <body>
+    <a-scene embedded arjs>
+    
+      <a-assets>
+ 			<a-asset-item id="scream" src="http://res.cloudinary.com/dougsillars/image/fetch/https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg"></a-asset-item>
+ 			<a-box id="box"  position='0 0.5 0' material='opacity: 0.5;'></a-box>
+      </a-assets>
+     		
+     		<a-entity position="0 1.5 -1"scale="10 10 10" rotation="0 0 0" gltf-model="#avocado"></a-entity>
+     		<a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+  </body>
+-->
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+<!-- define your markers -->
+<a-marker preset='hiro'>
+  <!-- here define the content to display on top of the marker -->
+  <a-box position='0 0.5 0' material='color: red;'></a-box>
+</a-marker>
+<!-- define a simple camera -->
+<a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
