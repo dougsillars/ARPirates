@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene >
+    <a-assets>
+    <img id="scream" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg">
+  </a-assets>
+
+  
+  
+    <!-- create your content here. just a box for now -->
+    <a-box position='0 1 0' scale="2 2 2" src =""#scream" material='opacity: 0.5;'></a-box>
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker-camera preset='hiro'></a-marker-camera>
+  </a-scene>
+</body>
